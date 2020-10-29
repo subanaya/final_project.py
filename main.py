@@ -169,18 +169,18 @@ while True:
 
         elif 'potion' in character_inventory:
             if oxygen_tank == 100:
-                print("\nYou are ready to fight the enemy.")
+                print("\nYou are ready to fight the enemy. ")
             first_attack_prompt = "\nDo you attack the enemy"
             first_attack_prompt += " sneakily or with force? "
             first_attack = input(first_attack_prompt)
 
             if first_attack.lower() == 'sneakily':
                 if 'avery' in chosen_character:
-                    print("\nYour attack was successful.")
+                    print("\nYour attack was successful. ")
                     print("The enemy's hp went from 100 to  50")
                     enemy_hp = 50
                 elif 'evelyn' in chosen_character:
-                    print("\nYour attack was unsuccessful.")
+                    print("\nYour attack was unsuccessful. ")
                     print("The enemy's hp remains at 100")
                     enemy_hp = 100
             elif first_attack.lower() == 'with force':
@@ -231,10 +231,10 @@ while True:
             if second_attack.lower() == 'ruthless':
                 if enemy_hp == 100:
                     print("\nThe enemy's hp decreased by 50")
-                    print("The enemy is strong enough to attack you back.")
+                    print("The enemy is strong enough to attack you back. ")
                     print("He attacks you for 100 hp.")
                     character_hp = 0
-                    print("\nThe enemy defeated you.")
+                    print("\nThe enemy defeated you. ")
                     print("Maybe try again with a different strategy.")
                     break
                 if enemy_hp == 50:
@@ -242,12 +242,12 @@ while True:
                     enemy_hp = 0
 
             elif second_attack.lower() == 'merciful':
-                print("\nYou chose to show some mercy")
-                print("while attacking the enemy.")
-                print("However, the enemy takes advantage of your mercy and")
+                print("\nYou chose to show some mercy ")
+                print("while attacking the enemy. ")
+                print("However, the enemy takes advantage of your mercy and ")
                 print("attacks you for 100 hp")
                 character_hp = 0
-                print("\nThe enemy defeated you.")
+                print("\nThe enemy defeated you. ")
                 print("Maybe try again with a different strategy.")
                 break
 
@@ -255,7 +255,7 @@ while True:
                 break
 
             if enemy_hp == 0:
-                print("\nCongratulations! You defeated the enemy,")
+                print("\nCongratulations! You defeated the enemy, ")
                 print("thus defeating the game.")
                 break
 
